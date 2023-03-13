@@ -1,9 +1,6 @@
 # pb-bin
 
 
----
-
-
 ## Description
 
 A simple command line utility to send GET and POST requests to [bins](https://github.com/WantGuns/bin), an alternative to Pastebin.
@@ -49,4 +46,3 @@ To GET the same paste, you would use:
 ```
 pb -b http://www.sbcv.co.uk:8820 -m GET -u http://www.sbcv.co.uk:8820/p/test.txt
 ```
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
