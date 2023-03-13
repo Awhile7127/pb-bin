@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Assuming pb-bin has been compiled and moved to ".local/bin"
+# Move this script to ".local/bin" also
+
+baseurl="http://www.sbcv.co.uk:8820"
+method="${1:-GET}"
+
+if [ $method = 'GET' ]; then
+    args="-u ${2:-http://www.sbcv.co.uk}"
+elif [ $method = 'POST' ]; then
+    args="-f $2"
+fi
+
+pb-bin -b $baseurl -m $method $args
