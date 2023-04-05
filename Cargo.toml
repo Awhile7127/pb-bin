@@ -1,7 +1,7 @@
 [package]
 name = "pb-bin"
 description = "Simple tool to GET and POST documents to a bin"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["jay"]
 edition = "2018"
 

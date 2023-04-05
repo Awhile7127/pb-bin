@@ -24,8 +24,8 @@ cargo build -r
 ## Usage
 
 ```
-pb --help        See help and available options
-pb <base-url> <method> <file> <get-url>
+pb-bin --help        See help and available options
+pb-bin <base-url> <method> <file> <get-url>
 ```
 
 - base-url **REQUIRED**: The URL of the server where requests are sent
@@ -36,7 +36,7 @@ pb <base-url> <method> <file> <get-url>
 To POST a file to http://www.sbcv.co.uk:8820 (my self-hosted bin), you would use:
 
 ```
-pb -b http://www.sbcv.co.uk:8820 -m POST -f ~/test.txt
+pb-bin -b http://www.sbcv.co.uk:8820 -m POST -f ~/test.txt
 ```
 
 This prints the URL of the paste to the terminal. For instance: http://www.sbcv.co.uk:8820/p/test.txt
@@ -44,7 +44,13 @@ This prints the URL of the paste to the terminal. For instance: http://www.sbcv.
 To GET the same paste, you would use:
 
 ```
-pb -b http://www.sbcv.co.uk:8820 -m GET -u http://www.sbcv.co.uk:8820/p/test.txt
+pb-bin -b http://www.sbcv.co.uk:8820 -m GET -u http://www.sbcv.co.uk:8820/p/test.txt
+```
+
+Similarly, text can be piped straight to the application from another process, as simply as:
+
+```
+echo "some text" | pb-bin -b http://www.sbcv.co.uk:8820 -m POST
 ```
 
 

@@ -3,9 +3,13 @@
 # Assuming pb-bin has been compiled and moved to ".local/bin"
 # Move this script to ".local/bin" also
 
+# Base URL to GET and POST pastes, ammend to your site if needed
 baseurl="http://www.sbcv.co.uk:8820"
+
+# Method defaults to GET if none provided
 method="${1:-GET}"
 
+# Modify the args based on which type of request is given
 if [ $method = 'GET' ]; then
     args="-u ${2:-http://www.sbcv.co.uk}"
 elif [ $method = 'POST' ]; then
