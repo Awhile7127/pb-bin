@@ -10,6 +10,19 @@ Written in Rust, so should be platform-independent.
 
 ## Compiling
 
+### Dependencies
+
+You need to have installed:
+
+- `libssl-dev`
+- `pkg-config`
+
+For Ubuntu / Debian-based systems, these are easy to install:
+
+```
+sudo apt install libssl-dev pkg-config
+```
+
 Tested using cargo:
 
 ### Debian / Ubuntu
